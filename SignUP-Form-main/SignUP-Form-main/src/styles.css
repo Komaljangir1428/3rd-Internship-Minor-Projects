@@ -1,0 +1,128 @@
+/* Container and form layout */
+.main {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fefefe;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Headings */
+.main h3 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Input fields and select dropdown */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0 12px 0;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Error messages */
+.errorMsg {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Password toggle button */
+button[type="button"] {
+  margin-left: 10px;
+  padding: 7px 15px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background: #0056b3;
+}
+
+/* Submit button */
+button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background: #28a745;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #1e7e34;
+}
+
+/* Submitted details */
+.details {
+  text-align: left;
+  background: #e6ffed;
+  padding: 20px;
+  border-radius: 10px;
+  color: #1b5e20;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0, 150, 0, 0.15);
+}
+
+.details h4 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #155724;
+}
+
+.details p {
+  margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .main {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}
